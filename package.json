@@ -1,10 +1,10 @@
 {
-  "name": "@dxy_seer/easydiscord",
-  "version": "0.1.5",
-  "description": "Make discord bots with ease!!",
+  "name": "quickcord.js",
+  "version": "0.0.1",
+  "description": "An easy way to create discord bots!",
   "license": "MIT",
-  "repository": "easy-discord/npm-js",
-  "main": "core-easy-dis.js",
+  "repository": "wzc-Seer/quickcord.js",
+  "main": "QC-core.js",
   "keywords": [
     "discord.js",
     "npm",
@@ -13,6 +13,7 @@
   ],
   "dependencies": {
     "discord.js": "^12.3.1",
+    "update-notifier": "^5.0.1",
     "youtube-notification": "^1.1.0"
   }
 }

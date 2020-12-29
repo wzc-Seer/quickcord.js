@@ -6,7 +6,14 @@ const ED_pack = require('@dxy_seer/easydiscord/package.json');
 var modulename = "ED";
 var color_green = "#22e238";
 const YouTubeNotifier = require('youtube-notification');
-var ed_dblSiteLink = "https://dbl-v1.glitch.me/";
+var ed_dblSiteLink = "https://wezabots.glitch.me/";
+const updateNotifier = require('update-notifier');
+const pkg = require('./package.json');
+ 
+updateNotifier({pkg}).notify();
+
+
+
 
 module.exports = {
     inviteURL: function(BotID, Permissions) {
@@ -137,7 +144,7 @@ module.exports = {
         if (message.content === Command) {
           if(OwnerId == ``){
             this.log(`I could not perform the following command: kill`);
-            this.log(`This is becuase you did not specify the bot owner...`);
+            this.log(`This is because you did not specify the bot owner...`);
           } else if(OwnerId == message.author.id){
             message.reply(`**Bot shutting down!**`);
             setTimeout(ExecuteKill, 3000);
